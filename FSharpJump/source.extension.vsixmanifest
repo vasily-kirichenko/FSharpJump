@@ -29,10 +29,15 @@ Changes
 - Missing icon for 'namespace' fixed
 - Fonts used to further differentiate levels
 - Item initially selected is based on the current caret position
-    </Description><MoreInfo>http://fwaris.wordpress.com/2011/01/04/fsharpjump-a-visual-studio-2010-extension-for-f-outlining-and-navigation/</MoreInfo><License>License.txt</License><Icon>FsJumpIco.png</Icon><PreviewImage>FSJump.png</PreviewImage><Tags>fsharp, navigation, outline</Tags>
+    </Description>
+    <MoreInfo>http://fwaris.wordpress.com/2011/01/04/fsharpjump-a-visual-studio-2010-extension-for-f-outlining-and-navigation/</MoreInfo>
+    <License>License.txt</License>
+    <Icon>FsJumpIco.png</Icon>
+    <PreviewImage>FSJump.png</PreviewImage>
+    <Tags>fsharp, navigation, outline</Tags>
   </Metadata>
   <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
+    <InstallationTarget Version="[11.0,12.0]" Id="Microsoft.VisualStudio.Pro" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
