@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="FSharpJump.ObjectPeddler.af42d401-d791-4a42-8ed8-c41466f4f358" Version="3.0" Language="en-US" Publisher="ObjectPeddler" />
+    <DisplayName>FSharpJump</DisplayName>
+    <Description xml:space="preserve">F# outlining and navigation tool. 
+Pops up a window in the F# editor which lists the namespaces, modules, types and "let bindings" in the current document.
+Pressing enter key on the selected list item will jump the caret to that line.
+
+Use Ctrl + "." (dot) to invoke the jump list.
+
+The list may be filtered by typing some characters
+---------------
+Changes
+---------------
+3.0
+- fixed 'private' and 'static' member handling
+- fixed 'and' handling for get/set properties
+- added support for markers (thanks to Ramon Snir)
+  "//#m" begins a maker line. First word after //#m will show in list
+- increased size of pop-up window
+2.1 
+- Now shows class members in outline
+- Fixed handling of mutable keyword
+- Other bug fixes
+---------------
+2.0
+- Hide adornment if caret position is changed
+- Missing icon for 'namespace' fixed
+- Fonts used to further differentiate levels
+- Item initially selected is based on the current caret position
+    </Description><MoreInfo>http://fwaris.wordpress.com/2011/01/04/fsharpjump-a-visual-studio-2010-extension-for-f-outlining-and-navigation/</MoreInfo><License>License.txt</License><Icon>FsJumpIco.png</Icon><PreviewImage>FSJump.png</PreviewImage><Tags>fsharp, navigation, outline</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+  </Assets>
+</PackageManifest>
